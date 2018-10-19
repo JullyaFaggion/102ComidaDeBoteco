@@ -14,16 +14,22 @@ a {
 }
 
 .menu {
-    background-color: lightgray;
+    background-color: yellow;;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 .menu li {
     display: inline;
+    padding-left: 80px;
 }
 
 .menu img {
-    width: 40px;
-    margin: 5px 0 0 5px;
+    width: 60px;
+    margin-left: 5px;
 }
 
 a:hover {
@@ -50,16 +56,72 @@ a:hover {
     margin-top: -18px;
     padding-top: 185px;
     padding-bottom: 185px;
-    background: url(../images/backgroundi.jpg);
+    background: url(../images/background.jpg);
     background-repeat: no-repeat;   
     background-size: cover;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: yellow;
 }
 
 #receita-bolovo {
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center; 
+    flex-direction: row-reverse;
+    flex-wrap: row wrap;
+}
+
+.container > div > img {
+    width: 700px;
+    margin-right: 10px;
+}
+
+.sobre-bolovos {
+    display: flex;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container-flex > img {
+    width: 600px;
+}
+
+.lista-footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* first-child pega o primeiro elemento. 
+   nth-child(x) o x pega a posição de tal elemento.
+   last-child pega o ultimo elemento. */
+
+.lista-footer > .info > ol > li:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lista-footer > .links > ol > li:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.lista-footer > .redes > ol > li:first-child { 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.menu > ul > li:last-child {
+    font-weight: bold;
 }
